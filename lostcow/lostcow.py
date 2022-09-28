@@ -13,6 +13,7 @@ while True:
         x += dir
         if x == y:
             print(i,file=w)
+            exit()
     ct *= 2
     dist += 1
     dir *= -1
