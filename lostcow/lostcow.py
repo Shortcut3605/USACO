@@ -12,6 +12,7 @@ while True:
         if x == y:
             print(i,file=w)
     ct *= 2
+    dir *= -1
     
 
 f.close()
