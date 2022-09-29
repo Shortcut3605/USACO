@@ -14,11 +14,12 @@ if x == y:
 ct = 1
 dir = 1
 currX = x
-dist = 0
+dist = 0    
 for i in range(9):
     for j in range(currX, x+(ct*dir)+1, dir):
         dist += 1
         if(j == y):
+            dist = min(dist, 9 *abs(x-y))
             print(dist,file=w)
             f.close()
             w.close()
